@@ -15,4 +15,19 @@ class SwagLabs(BasePage):
         return self.driver.current_url
 
 
+    def user_name(self):
 
+        try:
+            self.find_element(locator='#user-name').click()
+        except NoSuchElementException:
+            return False
+        return True
+
+
+    def password(self):
+
+        try:
+            self.find_element(locator='#password').click()
+        except NoSuchElementException:
+            return False
+        return True
