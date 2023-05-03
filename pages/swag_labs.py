@@ -12,7 +12,9 @@ class SwagLabs(BasePage):
         return True
 
     def get_url(self):
-        return self.driver.current_url
+        if self.get_url('https://www.saucedemo.com/'):
+            return True
+        return False
 
 
     def user_name(self):

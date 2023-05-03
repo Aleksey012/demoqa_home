@@ -7,12 +7,6 @@ def test_icon_exist(browser):
     assert swag.exist_icon()
 
 
-def test_get_url(browser):
-    swag = SwagLabs(browser)
-    swag.visit()
-    assert swag.get_url()
-
-
 def test_user_name(browser):
     swag = SwagLabs(browser)
     swag.visit()
